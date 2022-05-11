@@ -18,7 +18,7 @@ spec:
   progressDeadlineSeconds: 60
   service:
     # ClusterIP port number
-    port: 9999
+    port: 80
     # container port number or name
     targetPort: 9999
   analysis:
