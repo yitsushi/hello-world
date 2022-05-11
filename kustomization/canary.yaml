@@ -53,7 +53,7 @@ spec:
         timeout: 10s
         metadata:
           type: bash
-          cmd: "curl -sd 'test' http://hello-world-canary.hello-world/token | grep token"
+          cmd: "curl -s http://hello-world-canary.hello-world/ | grep hello-world"
       - name: load-test
         type: rollout
         url: http://loadtester.flagger/
