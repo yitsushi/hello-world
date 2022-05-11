@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - hpa.yaml
   - deployment.yaml
+  - canary.yaml

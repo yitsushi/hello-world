@@ -32,12 +32,10 @@ spec:
         - name: LISTEN
           value: ":9999"
         livenessProbe:
-          exec:
-            command:
-            - podcli
-            - check
-            - http
-            - localhost:9898/healthz
+          httpGet:
+            scheme: HTTP
+            path: /
+            port: 9999
           initialDelaySeconds: 5
           timeoutSeconds: 5
         readinessProbe:
