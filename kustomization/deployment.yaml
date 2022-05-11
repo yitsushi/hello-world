@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: ghcr.io/yitsushi/hello-world:v1.0.5
+        image: ghcr.io/yitsushi/hello-world:1.0.6
         imagePullPolicy: IfNotPresent
         ports:
         - name: http
