@@ -10,7 +10,7 @@ spec:
     kind: Deployment
     name: hello-world
   autoscalerRef:
-    apiVersion: autoscaling/v2beta2
+    apiVersion: autoscaling/v2
     kind: HorizontalPodAutoscaler
     name: hello-world
   # the maximum time in seconds for the canary deployment
