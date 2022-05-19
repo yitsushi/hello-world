@@ -31,7 +31,7 @@ spec:
     maxWeight: 50
     # canary increment step
     # percentage (0-100)
-    stepWeight: 5
+    stepWeight: 10
     # Traefik Prometheus checks
     metrics:
     - name: request-success-rate
